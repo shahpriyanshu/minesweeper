@@ -1,0 +1,43 @@
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.grid-cell>span {
+   display: none;
+}
+
+.grid-cell.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A9A9A9;
+}
+
+.grid-cell.active>span, .grid-cell.active-bomb>span {
+    display: block;
+}
+
+.grid-cell.active-bomb>span>img {
+    height: 15px;
+    width: 15px
+}
+
+.grid-cell.active-bomb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
